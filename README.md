@@ -1,7 +1,7 @@
-#🐾 Petora: Pet Adoption Platform
+**🐾 Petora: Pet Adoption Platform**
 Petora is a full-stack web application designed to connect pets in need of a home with potential adopters. It features a public-facing gallery, a detailed pet application process, and a secure administration dashboard for shelter staff to manage pet listings and review adoption applications.
 
-#✨ Features
+**✨ Features**
 🏡 Public Homepage: Engaging layout featuring a pet gallery and a clear 3-step guide for adoption.
 
 🐶 Pet Catalog: Browse available pets with filtering options (species, size, status).
@@ -16,7 +16,7 @@ Petora is a full-stack web application designed to connect pets in need of a hom
 
 🎨 Custom Theming: Utilizes a consistent, custom Petora brand theme and color palette.
 
-🛠️ Installation and Setup
+**🛠️ Installation and Setup**
 Follow these steps to get the Petora application running locally on your machine.
 
 Prerequisites
@@ -46,13 +46,13 @@ Navigate to your frontend directory (e.g., cd frontend).
 #Install dependencies:
 npm install react react-dom react-router-dom axios
 
-#Start the client application:
+Start the client application:
 npm start
 The application will open in your browser, typically at http://localhost:3000.
 
 Ensure the server is running (from Step 1).
 
-🔑 Usage and Login
+**🔑 Usage and Login**
 Public Site: Access the main site at http://localhost:3000.
 
 Admin Login: Navigate to shelter and use the credentials
