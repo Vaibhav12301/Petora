@@ -1,0 +1,45 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: var(--petora-orange);
+    color: var(--petora-white); 
+    border: none;
+    border-radius: 50%; 
+    height: 50px;
+    width: 50px;
+    
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove default button padding */
+    
+    /* Transition and Visibility Control (Initial state) */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+/* State to show the button when scrolled (controlled by is-visible class in JS) */
+.scroll-to-top-button.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Hover effect */
+.scroll-to-top-button:hover {
+    background-color: #cf6e25; 
+}
+
+/* Style the icon inside the button */
+.scroll-icon {
+    width: 24px;
+    height: 24px;
+    /* Ensure icon is white/light against the orange background */
+    filter: brightness(0) invert(1); 
+}

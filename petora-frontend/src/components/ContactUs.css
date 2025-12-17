@@ -1,0 +1,203 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--petora-cream);
+    color: var(--petora-brown);
+}
+
+/* --- Top Headline and Intro --- */
+.contact-intro {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.contact-headline {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.contact-intro-text {
+    font-size: 1.15rem;
+    color: var(--petora-gray);
+    line-height: 1.6;
+}
+
+
+/* --- Main Content Section: Image on Left, Info on Right --- */
+.contact-main-content {
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: row; 
+    gap: 3rem;
+    align-items: flex-start;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.contact-image-area {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 450px; 
+}
+
+.vertical-cat-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.contact-info-area {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem; 
+    background-color: var(--petora-light-gray);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-area-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--petora-green);
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.info-block {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--petora-beige);
+}
+
+.info-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.info-text {
+    font-size: 0.95rem;
+    color: var(--petora-brown);
+}
+
+
+/* --- Contact Form Section (Bottom) --- */
+.contact-form-section {
+    padding: 3rem 0 5rem;
+    text-align: center;
+}
+
+.form-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--petora-green);
+    margin-bottom: 2.5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--petora-white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(45, 91, 78, 0.2);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--petora-green);
+    margin-bottom: 0.5rem;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 10px; 
+    border: 1px solid var(--petora-light-gray);
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: var(--petora-brown);
+    background-color: var(--petora-cream);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--petora-orange);
+    box-shadow: 0 0 0 3px rgba(240, 128, 0, 0.2); 
+}
+
+.contact-form button.primary-btn {
+    width: auto; 
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    display: block; 
+    margin: 2rem auto 0; 
+    background-color: var(--petora-green); 
+    color: var(--petora-white);
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .main-content-wrapper {
+        flex-direction: column; 
+        align-items: center;
+        gap: 2rem;
+    }
+    .contact-image-area {
+        max-width: 90%; 
+        height: 350px;
+    }
+    .contact-info-area {
+        max-width: 90%;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .info-area-heading, .info-block {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-headline {
+        font-size: 2.5rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+}

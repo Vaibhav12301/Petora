@@ -1,0 +1,235 @@
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 91, 78, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--petora-white);
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-title {
+    color: var(--petora-green);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.modal-divider {
+    border: none;
+    border-top: 1px solid var(--petora-light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.detail-group {
+    display: flex;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--petora-brown);
+    min-width: 120px;
+}
+
+.detail-value, .detail-message {
+    color: var(--petora-gray);
+    flex-grow: 1;
+}
+
+.message-group {
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 1px solid var(--petora-light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.detail-message {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.button-reject {
+    background-color: var(--petora-error);
+    color: var(--petora-white);
+}
+.button-reject:hover {
+    background-color: #c44133; 
+}
+
+.button-approve {
+    background-color: var(--petora-success);
+    color: var(--petora-white);
+}
+.button-approve:hover {
+    background-color: #3e8e41; 
+}
+
+.button-close {
+    background-color: var(--petora-green);
+    color: var(--petora-beige);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 91, 78, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--petora-white);
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-title {
+    color: var(--petora-green);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.modal-divider {
+    border: none;
+    border-top: 1px solid var(--petora-light-gray);
+    margin-bottom: 1.5rem;
+}
+
+.detail-group {
+    display: flex;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--petora-brown);
+    min-width: 140px;
+}
+
+.detail-value, .detail-message {
+    color: var(--petora-gray);
+    flex-grow: 1;
+    margin: 0;
+}
+
+.message-group {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    border: 1px solid var(--petora-light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.detail-message {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Feedback Message Styles */
+.feedback-message {
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.feedback-message.success {
+    background-color: #E8F5E9;
+    color: var(--petora-success);
+    border: 1px solid var(--petora-success);
+}
+
+.feedback-message.error {
+    background-color: #FFEBEE;
+    color: var(--petora-error);
+    border: 1px solid var(--petora-error);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.button-reject {
+    background-color: var(--petora-error);
+    color: var(--petora-white);
+}
+
+.button-reject:hover {
+    background-color: #c44133; 
+}
+
+.button-approve {
+    background-color: var(--petora-success);
+    color: var(--petora-white);
+}
+
+.button-approve:hover {
+    background-color: #3e8e41; 
+}
+
+.button-close {
+    background-color: var(--petora-green);
+    color: var(--petora-beige);
+}
+
+.button-reject:disabled,
+.button-approve:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

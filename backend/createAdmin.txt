@@ -1,0 +1,43 @@
+const axios = require('axios');
+
+const newAdmin = {
+    email: "admin@petora.com",
+    password: "admin@12301" 
+};
+
+async function init() {
+    try {
+        console.log(" Connecting to server...");
+        
+        // 1. Create a Shelter (Required for the user)
+        console.log("1. Creating Shelter 'Petora HQ'...");
+        const shelterRes = await axios.post('http://localhost:5000/api/shelters', {
+            name: "Petora HQ",
+            location: "Mumbai",
+            contactEmail: "hq@petora.com",
+            contactPhone: "1234567890"
+        });
+        const shelterId = shelterRes.data._id;
+        console.log("  Shelter Created! ID:", shelterId);
+
+        // 2. Create the Admin User
+        console.log(`2. Creating Admin User (${newAdmin.email})...`);
+        await axios.post('http://localhost:5000/api/auth/register', {
+            email: newAdmin.email,
+            password: newAdmin.password,
+            role: 'shelter-admin',
+            shelterRef: shelterId
+        });
+        console.log("\n SUCCESS! Database setup complete.");
+        console.log("------------------------------------------------");
+        console.log(`Email:    ${newAdmin.email}`);
+        console.log(`Password: ${newAdmin.password}`);
+        console.log("------------------------------------------------");
+
+    } catch (err) {
+        console.error("Error:", err.response?.data?.message || err.message);
+        console.log("Make sure your server is running on port 5000!");
+    }
+}
+
+init();

@@ -1,0 +1,96 @@
+.application-list-container {
+    width: 100%;
+}
+
+.list-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--petora-green);
+    margin-bottom: 1.5rem;
+}
+
+.loading-message, .no-applications-message {
+    text-align: center;
+    padding: 1rem;
+    color: var(--petora-brown);
+    background-color: var(--petora-light-gray);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.error-message {
+    padding: 1rem;
+    color: var(--petora-error);
+    background-color: rgba(231, 76, 60, 0.1);
+    border: 1px solid var(--petora-error);
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.applications-table th, .applications-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--petora-light-gray);
+    color: var(--petora-brown);
+}
+
+.applications-table th {
+    background-color: var(--petora-green);
+    color: var(--petora-cream);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Zebra striping for readability */
+.applications-table tbody tr:nth-child(even) {
+    background-color: var(--petora-cream);
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.3em 0.8em;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.status-submitted {
+    background-color: var(--petora-beige);
+    color: var(--petora-brown);
+}
+
+.status-in-review {
+    background-color: rgba(229, 123, 47, 0.2);
+    color: var(--petora-orange);
+}
+
+.status-approved {
+    background-color: rgba(76, 175, 80, 0.2); 
+    color: var(--petora-success);
+}
+
+.status-rejected {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: var(--petora-error);
+}
+
+.action-view {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.application-list-container {
+    width: 100%;
+}
+

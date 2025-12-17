@@ -1,0 +1,119 @@
+.pet-card {
+  background-color: var(--petora-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(45, 91, 78, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.pet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(45, 91, 78, 0.15);
+}
+
+
+.pet-card-image-link {
+  display: block;
+  overflow: hidden;
+  
+}
+
+.pet-card-image {
+  width: 100%;
+  height: 192px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pet-card-image-link:hover .pet-card-image {
+  transform: scale(1.05);
+}
+
+.pet-card-content {
+  padding: 1.25rem;
+}
+
+.pet-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.pet-card-name {
+  color: var(--petora-green);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.pet-card-name:hover {
+  color: #264a3f; 
+}
+
+.pet-card-status {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.pet-card-status.status-available {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.pet-card-status.status-pending {
+  background-color: rgba(255, 179, 0, 0.15);
+  color: #b36b00;
+}
+
+.pet-card-info {
+  color: var(--petora-brown);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.pet-card-details {
+  color: var(--petora-gray);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pet-card-description {
+  color: var(--petora-gray);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.pet-card-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+
+
+.pet-card-status.status-available {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.pet-card-status.status-pending {
+  background-color: rgba(255, 179, 0, 0.15); 
+  color: #b36b00;
+}
+
+.pet-card-status.status-adopted {
+    background-color: var(--petora-brown);
+    color: var(--petora-beige);
+}

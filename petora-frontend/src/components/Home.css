@@ -1,0 +1,394 @@
+#hero, #storeInfo, #testimonial {
+    padding: 6rem 0;
+    background-color: url(../assets/PetoraBg.png);
+    /* background-color: var(--petora-cream);  */
+}
+
+.hero__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse; 
+	gap: 5rem;
+}
+
+.hero__left__wrapper {
+	max-width: 350px;
+  margin: 0 auto; 
+}
+
+.hero__imgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pet-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 80%;
+    max-width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pet-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dog-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    height: 350px;
+}
+.cat-img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 250px;
+}
+.bird-img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 250px;
+}
+
+.hero__heading {
+	font-weight: 800; 
+	line-height: 1.2em;
+	text-align: center;
+	font-size: 2.5rem; 
+	margin-bottom: 1rem;
+	color: var(--petora-green); 
+}
+
+.hero__info {
+	text-align: center;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+	color: var(--petora-brown);
+}
+
+.button__wrapper {
+	text-align: center;
+    text-decoration: none;
+}
+
+.button__wrapper Link{
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.hero__wrapper {
+		flex-direction: row; 
+		gap: 0;
+	}
+	.hero__left {
+		flex: 3;
+	}
+	.hero__right {
+		flex: 4;
+	}
+	.hero__heading {
+		font-size: 3.6rem;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.hero__info {
+		margin-bottom: 2rem;
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.button__wrapper {
+		text-align: left;
+	}
+	.hero__imgWrapper {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 600px) {
+    .hero__heading {
+        font-size: 2.5rem;
+    }
+    .pet-image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        max-width: 100%;
+    }
+    .dog-img, .cat-img, .bird-img {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        height: 250px;
+    }
+}
+
+
+/* Petora Gallery */
+/* --- NEW: Pet Gallery Section Styles --- */
+#petGallery {
+    padding: 4rem 0;
+    background-color: var(--petora-cream); /* Use main background color */
+    text-align: center;
+}
+
+.gallery__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--petora-orange); /* Using orange for a striking title */
+    margin-bottom: 2.5rem;
+}
+
+.gallery__wrapper {
+    display: grid;
+    /* Responsive grid: 2 columns on mobile, 3+ on larger screens */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+.gallery__item {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery__item:hover {
+    transform: scale(1.03);
+}
+
+.gallery__img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; /* Ensures the image fills the space nicely */
+    display: block;
+}
+
+.gallery__button {
+    margin-top: 1.5rem;
+}
+
+/* Responsive adjustments for the gallery title */
+@media only screen and (max-width: 600px) {
+    .gallery__title {
+        font-size: 1.5rem;
+    }
+    .gallery__img {
+        height: 150px;
+    }
+}
+
+/* --- Adopt Guide Section Styles --- */
+#adoptGuideSection {
+    padding: 6rem 0;
+    background-color: var(--petora-cream); 
+    text-align: center;
+}
+
+.guide__heading {
+    font-size: 2.5rem; 
+    font-weight: 800;
+    color: var(--petora-green);
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.guide__subtitle {
+    font-size: 1.1rem;
+    color: var(--petora-brown);
+    margin-bottom: 4rem;
+}
+
+.guide__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.guide__item {
+    flex: 1;
+    max-width: 300px;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.guide__icon {
+    /* Container for the icon image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    
+    /* Styling the container like a badge/circle */
+    background-color: var(--petora-cream);
+    border: 3px solid var(--petora-orange);
+    border-radius: 50%;
+}
+
+.guide__icon__img {
+    height: 30px;
+    width: 30px;
+}
+
+.guide__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--petora-green);
+    margin-bottom: 1rem;
+}
+
+.guide__text {
+    font-size: 0.95rem;
+    color: var(--petora-gray);
+    line-height: 1.6;
+    margin: 0 auto; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .guide__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .guide__item {
+        max-width: 400px; 
+        padding-bottom: 1rem;
+    }
+    .guide__heading {
+        font-size: 1.8rem;
+    }
+}
+
+/* --- Shelter Info Section Styles --- */
+#storeInfo {
+    background-color: var(--petora-light-gray);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.storeInfo__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.storeInfo__item {
+    max-width: 200px; 
+}
+.storeInfo__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--petora-orange);
+    margin-top: 0.5rem;
+}
+.storeInfo__icon img {
+    height: 40px;
+    filter: invert(30%) sepia(20%) saturate(600%) hue-rotate(150deg); 
+}
+.storeInfo__text {
+    color: var(--petora-brown);
+}
+@media only screen and (max-width: 767px) {
+    .storeInfo__wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+/* --- Testimonial Section Styles --- */
+.testimonial__wrapper {
+	max-width: 900px; 
+	margin: 0 auto;
+}
+.testimonial__title {
+	font-size: 2.5rem; 
+	margin-bottom: 5rem;
+	text-align: center;
+	color: var(--petora-green);
+}
+.testimonial__items__wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+  text-align: left; 
+}
+
+.testimonial__item {
+	padding: 1.5rem; 
+	display: flex;
+	gap: 1rem;
+	background-color: var(--petora-white); 
+	border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(45, 91, 78, 0.1); 
+  align-items: center;
+}
+
+.testimonial__item__img {
+	flex: none; 
+	width: 100px;
+	height: 150px;
+	border-radius: 10%;
+	overflow: hidden;
+  border: 2px solid var(--petora-orange);
+}
+.testimonial__item__img img {
+	object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.testimonial__item__info {
+	flex: 1;
+}
+.testimonial__item__name {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+    color: var(--petora-green);
+}
+.testimonial__item__stars {
+	max-height: 18px;
+	width: max-content;
+	margin-bottom: 1rem;
+}
+.testimonial__item__text {
+	font-size: 0.95rem;
+	color: var(--petora-brown);
+	line-height: 1.4em;
+}
+@media only screen and (max-width: 767px) {
+	.testimonial__title {
+		font-size: 1.8rem;
+		margin-bottom: 3rem;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.testimonial__item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.testimonial__item__img {
+		margin: 0 auto;
+	}
+}

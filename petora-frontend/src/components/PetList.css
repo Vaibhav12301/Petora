@@ -1,0 +1,55 @@
+.pet-list-wrapper {
+  padding: 1rem; 
+}
+
+.list-title {
+  font-size: 2.25rem; 
+  font-weight: 800; 
+  margin-bottom: 1.5rem; 
+  color: var(--petora-green); 
+}
+
+
+.loading-message {
+  text-align: center;
+  font-size: 1.125rem; 
+  margin-top: 2.5rem; 
+  color: var(--petora-orange); 
+}
+
+.no-pets-message {
+  padding: 1.5rem; 
+  text-align: center;
+  font-size: 1.25rem; 
+  color: var(--petora-brown); 
+  background-color: var(--petora-light-gray); 
+  border: 1px solid var(--petora-beige);
+}
+
+
+.pet-grid {
+  display: grid;
+  gap: 2rem; 
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+
+@media (min-width: 640px) {
+  .pet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .pet-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .pet-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ===============================
+   Petora Color Palette
+   =============================== */
+
+:root {
+  /* Brand Colors */
+  --petora-green: #2D5B4E;
+  --petora-orange: #E57B2F;
+  --petora-beige: #F0CFA3;
+  --petora-brown: #3A2E24;
+
+  /* Neutrals */
+  --petora-cream: #F8F1E3;
+  --petora-white: #FFFFFF;
+  --petora-gray: #7A7A7A;
+  --petora-light-gray: #EDE9E3;
+
+  /* Semantic (derived tones) */
+  --petora-success: #4CAF50;
+  --petora-warning: #FFB300;
+  --petora-error: #E74C3C;
+}
+
+/* ===============================
+   Global Styles
+   =============================== */
+
+body {
+  background-color: var(--petora-cream);
+  color: var(--petora-green);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   Typography
+   =============================== */
+
+h1, h2, h3, h4, h5 {
+  color: var(--petora-green);
+  font-weight: 600;
+}
+
+p {
+  color: var(--petora-brown);
+}
+
+/* ===============================
+   Buttons
+   =============================== */
+
+.button {
+  background-color: var(--petora-orange);
+  color: var(--petora-white);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.button:hover {
+  background-color: #cf6e25; /* slightly darker orange */
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #b75f1f;
+  transform: translateY(0);
+}
+
+.button.secondary {
+  background-color: var(--petora-green);
+  color: var(--petora-beige);
+}
+
+.button.secondary:hover {
+  background-color: #264a3f;
+}
+
+/* ===============================
+   Cards (e.g. pet listings)
+   =============================== */
+
+.card {
+  background-color: var(--petora-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(45, 91, 78, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(45, 91, 78, 0.15);
+}
+
+.card h3 {
+  color: var(--petora-green);
+}
+
+.card p {
+  color: var(--petora-brown);
+}
+
+/* ===============================
+   Navigation Bar
+   =============================== */
+
+.navbar {
+  background-color: var(--petora-green);
+  color: var(--petora-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: var(--petora-beige);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--petora-orange);
+}
+
+/* ===============================
+   Footer
+   =============================== */
+
+.footer {
+  background-color: var(--petora-brown);
+  color: var(--petora-cream);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   Utility Classes
+   =============================== */
+
+.text-orange { color: var(--petora-orange); }
+.text-green { color: var(--petora-green); }
+.text-beige { color: var(--petora-beige); }
+
+.bg-green { background-color: var(--petora-green); }
+.bg-orange { background-color: var(--petora-orange); }
+.bg-cream { background-color: var(--petora-cream); }
+
+.border-rounded { border-radius: 16px; }
+.shadow-soft { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); }
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */

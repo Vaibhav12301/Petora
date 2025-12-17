@@ -1,0 +1,163 @@
+.about-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--petora-cream);
+    color: var(--petora-brown);
+}
+
+/* --- Typography --- */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--petora-green);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+    font-size: 1.15rem;
+    color: var(--petora-gray);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--petora-orange);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --- Layout Sections --- */
+.about-section {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Mission Section (Image & Text) */
+.mission-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.mission-content {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.mission-content .section-heading {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: var(--petora-green);
+}
+
+.mission-image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mission-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(45, 91, 78, 0.2);
+}
+
+/* Impact/Statistics Section */
+.impact-section {
+    background-color: var(--petora-light-gray);
+    border-radius: 16px;
+    padding: 2.5rem 1rem;
+}
+
+.impact-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.impact-item {
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.impact-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.impact-label {
+    font-size: 1rem;
+    color: var(--petora-brown);
+    font-weight: 500;
+}
+
+/* Team/Pet Collage Section */
+.team-section {
+    text-align: center;
+}
+
+.pet-collage-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.collage-image {
+    width: 45%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-info {
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    color: var(--petora-gray);
+}
+
+/* Button */
+.about-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+    .mission-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mission-content .section-heading {
+        text-align: center;
+    }
+    .mission-image-container {
+        max-width: 100%;
+    }
+    .impact-grid {
+        flex-direction: column;
+    }
+    .pet-collage-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .collage-image {
+        width: 90%;
+        height: auto;
+    }
+}

@@ -1,0 +1,104 @@
+.creation-form-wrapper {
+  max-width: 48rem; 
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding: 2rem;
+  background-color: var(--petora-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(45, 91, 78, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  font-size: 1.875rem; 
+  font-weight: 600;
+  color: var(--petora-green);
+  margin-bottom: 1.5rem;
+}
+
+
+.status-message {
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+}
+
+.success-message {
+  color: var(--petora-green);
+  background-color: rgba(76, 175, 80, 0.1); 
+  border: 1px solid var(--petora-success);
+}
+
+.error-message {
+  color: var(--petora-error); 
+  background-color: rgba(231, 76, 60, 0.1);
+  border: 1px solid var(--petora-error);
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+.form-group {
+  flex: 1; 
+}
+
+.input-label {
+  display: block;
+  font-size: 0.875rem; 
+  font-weight: 500;
+  color: var(--petora-brown); 
+  margin-bottom: 0.5rem;
+}
+
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--petora-light-gray);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: var(--petora-brown);
+}
+
+.form-input:focus {
+  outline: 2px solid var(--petora-orange);
+  border-color: var(--petora-orange);
+}
+
+.textarea-input {
+  resize: vertical;
+}
+
+
+.file-input {
+  padding: 0.75rem 0;
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 600; 
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .form-row > .form-group:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
